@@ -1,0 +1,14 @@
+.whitetext {
+    color: white;
+    background-color: black;
+}
+
+.yellowgreenbkg {
+    background-color: yellowgreen;
+}
+
+.whitetext,
+.yellowgreenbkg {
+    font: Helvetica, "Times New Roman", sans-serif;
+    font-size: 28px;
+}
