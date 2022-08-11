@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
   font-family: Roboto, sans-serif;
 }
 
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 5px 20px 5px 20px; /* could have reduced this to the 2 inputs instead of 4 */
 }
 
 input {
@@ -25,3 +28,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.header, .footer {
+  display: flex;
+  align-items: center; /* this could have been removed as it was only relevant to content, which was pulled out */
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+/* This whole section could have been put under ul */
+.left-links, .right-links {
+  display: flex;
+}
+
+.left-links {
+  justify-content: left;
+}
+
+.right-links {
+  justify-content: right;
+}
+
+/* End for the above comment. */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 10px; /* This could have been done via "gap" under ul */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
